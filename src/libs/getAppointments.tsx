@@ -1,7 +1,7 @@
 export default async function getAppointments(token: string) {
 
   const response = await fetch(
-    `${process.env.BACKEND_URL}/api/v1/appointments`,
+    `https://backendsw-vercel.vercel.app/api/v1/appointments`,
     {
       method: "GET",
       headers: {

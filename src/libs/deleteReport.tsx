@@ -1,7 +1,7 @@
 export default async function deleteReport(id:string,token: string) {
 
     const response = await fetch(
-      `${process.env.BACKEND_URL}/api/v1/reports/${id}`,
+      `https://backendsw-vercel.vercel.app/api/v1/reports/${id}`,
       {
         method: "DELETE",
         headers: {

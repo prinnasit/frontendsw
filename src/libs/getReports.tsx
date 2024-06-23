@@ -1,7 +1,7 @@
 export default async function getReports(token: string) {
 
   const response = await fetch(
-    `${process.env.BACKEND_URL}/api/v1/reports`,
+    `https://backendsw-vercel.vercel.app/api/v1/reports`,
     {
       method: "GET",
       headers: {

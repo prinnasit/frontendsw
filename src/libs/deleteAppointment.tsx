@@ -1,7 +1,7 @@
 export default async function deleteAppointment(id:string,token: string) {
 
     const response = await fetch(
-      `${process.env.BACKEND_URL}/api/v1/appointments/${id}`,
+      `https://backendsw-vercel.vercel.app/api/v1/appointments/${id}`,
       {
         method: "DELETE",
         headers: {
