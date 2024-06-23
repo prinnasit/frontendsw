@@ -1,7 +1,7 @@
 
 export default async function updateAppointment(appID:string ,dentist:string, appDate:string , token:string) {
 
-    const response = await fetch(`https://cedt-se-project-dentnutz-backend.vercel.app/api/v1/appointments/${appID}`, {
+    const response = await fetch(`${process.env.BACKEND_URL}/api/v1/appointments/${appID}`, {
         method: 'PUT',
         headers: {
             'authorization': `Bearer ${token}`,
